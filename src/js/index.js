@@ -30,11 +30,11 @@ SimpleCounter.PropTypes = {
 
 let counter = 0;
 setInterval(function () {
-	const four = Math.floor(counter / 1000);
-	const three = Math.floor(counter / 100);
-	const two = Math.floor(counter / 10);
-	const one = Math.floor(counter / 1);
-	console.log(four, three, two, one);
+	const four = Math.floor(counter / 1000) % 10;
+	const three = Math.floor(counter / 100) % 10;
+	const two = Math.floor(counter / 10) % 10;
+	const one = Math.floor(counter / 1) % 10;
+	console.log(four, three, two, one) % 10;
 
 	counter++;
 
@@ -48,5 +48,3 @@ setInterval(function () {
 		document.querySelector("#app")
 	);
 }, 1000);
-
-//render your react application
