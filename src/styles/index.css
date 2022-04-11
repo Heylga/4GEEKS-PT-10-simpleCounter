@@ -1,7 +1,7 @@
-.seconds {
+.bigCounter {
     align-items: center;
+    display: inline;
     display: flex;
     justify-content: center;
-    padding-top: 10px;
-    font-size: "5rem"
-}
+    padding-top: 2px;
+} 
